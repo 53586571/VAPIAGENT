@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Brody Digital Assistant</title>
 </head>
 <body>
   <!-- Vapi Assistant Button will appear here -->
   <script src="https://cdn.vapi.ai/web-sdk.js"></script>
   <script>
-    // Wait for the SDK to load before initializing
     function startVapi() {
       if (window.VapiSDK) {
         window.VapiSDK.start({
@@ -40,7 +39,7 @@
               subtitle: "End the call.",
               icon: "https://unpkg.com/lucide-static@0.321.0/icons/phone-off.svg",
             },
-          }
+          },
         });
       } else {
         setTimeout(startVapi, 100);
